@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+
+<form>
+    <label for="videoForm">Selecciona un video:</label>
+    <input type="file" id="videoForm" name="videoForm" accept="video/*">
+    <input type="submit">
+</form>
+
+<body>
+    <video width="670" height="540" id="video1">
+        <source src="./files/video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+    </video>
+<div>
+    <button id="play"
+        onclick="Reproducir()"></button> 
+    <button
+        onclick="Stop()">Parar &#9209</button> 
+    <button
+        onclick="BajarVolumen()">Bajar Volumen &#128264</button>
+    <button
+        onclick="SubirVolumen()">Subir Volumen &#128266</button> 
+
+
+</div>
+
+<script src="./js/index.js"></script>
+
+
+</body>
+</html>

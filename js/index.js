@@ -6,11 +6,11 @@ let btnPlay = document.getElementById("play");
 btnPlay.innerHTML = "Reproducir \u23EF"
 
 function Reproducir(){
- 
+
     
     if (elVideo.paused) {
         elVideo.play();
-       
+
         btnPlay.innerHTML = "Pausar \u23F8";
     }   
     else {
